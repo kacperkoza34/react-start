@@ -5,9 +5,10 @@ import Hero from '../Hero/Hero.js';
 
 class List extends React.Component {
   render() {
+    console.log(this.props.title);
     return (
       <section className={styles.component}>
-      <Hero />
+        <Hero titleText={this.props.title} />
       </section>
     )
   }
