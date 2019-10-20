@@ -9,7 +9,6 @@ const createActionName = name => `app/${reducerName}/${name}`;
 
 // action types
 export const ADD_COLUMN = createActionName('ADD_COLUMN');
-
 // action creators
 export const createAction_addColumn = payload => ({ payload, type: ADD_COLUMN });
 
