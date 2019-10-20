@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 
 
 
-const Card = props => (
+const Card = ({title}) => (
 
      <section className={styles.component}>
-        <h4>{props.title}</h4>
+        <h4>{title}</h4>
      </section>
   )
 
