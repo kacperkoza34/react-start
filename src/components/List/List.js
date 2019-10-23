@@ -6,6 +6,7 @@ import Column from '../Column/ColumnContainer';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
 import Creator from '../Creator/Creator.js';
+import Search from '../Search/SearchContainer.js';
 
 
 
@@ -17,6 +18,7 @@ class List extends React.Component {
     description: PropTypes.node,
     columns: PropTypes.array,
     addColumn: PropTypes.func,
+    image: PropTypes.string,
   }
 
   static defaultProps = {
@@ -33,6 +35,9 @@ class List extends React.Component {
           {ReactHtmlParser(description)}
         </div>
 
+        <Search />
+
+
         <div className={styles.columns}>
           {columns.map(columnData => (
             <Column key={columnData.id} {...columnData} />
@@ -44,7 +49,7 @@ class List extends React.Component {
         </div>
 
       </section>
-    )
+    );
   }
 }
 

@@ -12,19 +12,22 @@ import {settings} from '../../data/dataStore';
 class Column extends React.Component {
 
   static defaultProps = {
-  icon: settings.defaultColumnIcon,
+    icon: settings.defaultColumnIcon,
   }
 
   static propTypes = {
     title: PropTypes.node.isRequired,
+    icon: PropTypes.string,
+    reduxCards: PropTypes.array,
+    addCard: PropTypes.func,
   }
 
 
-  render(state){
+  render(){
     const { title, icon, reduxCards, addCard } = this.props;
     //console.log(this.props)
     return (
-     <section className={styles.component}>
+      <section className={styles.component}>
         <h3 className={styles.title}>
           {title}
           <span className={styles.icon}>
@@ -46,13 +49,13 @@ class Column extends React.Component {
         </div>
 
 
-     </section>
-    )
-   }
+      </section>
+    );
   }
+}
 
-  Column.propTypes = {
+Column.propTypes = {
   title: PropTypes.node.isRequired,
-  };
+};
 
 export default Column;
