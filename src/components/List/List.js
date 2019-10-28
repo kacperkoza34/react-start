@@ -37,9 +37,6 @@ class List extends React.Component {
             {ReactHtmlParser(description)}
           </div>
 
-          <Search />
-
-
           <div className={styles.columns}>
             {columns.map(columnData => (
               <Column key={columnData.id} {...columnData} />

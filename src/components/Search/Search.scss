@@ -1,9 +1,11 @@
 @import '../../styles/settings.scss';
 
 .component {
+  //max-height: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
+
 
   input {
     // flex-grow: 1;
@@ -14,4 +16,7 @@
     font-family: $font-text;
     border-radius: $radius;
   }
+}
+.searchButton {
+  max-height: 20px;
 }

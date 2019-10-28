@@ -4,6 +4,8 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
+import Search from '../Search/Search';
+
 
 
 const Header = props => (
@@ -11,7 +13,8 @@ const Header = props => (
     <h2 className={styles.title}>
       <Container>
         <div className={styles.wrapper}>
-          <Link className={styles.logo}>{ReactHtmlParser(settings.header.icon)}</Link>
+          <NavLink exact to='/' className={styles.logo}>{ReactHtmlParser(settings.header.icon)}</NavLink>
+          <Search />
           <NavLink exact to='/'>Home</NavLink>
           <NavLink exact to='/info'>Info</NavLink>
           <NavLink exact to='/faq'>FAQ</NavLink>

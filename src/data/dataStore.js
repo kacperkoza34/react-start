@@ -15,10 +15,12 @@ export const settings = {
   info: {
     title: 'Info',
     content: 'Respect forming clothes do in he. Course so piqued no an by appear. Themselves reasonable pianoforte so motionless he as difficulty be. Abode way begin ham there power whole. Do unpleasing indulgence impossible to conviction. Suppose neither evident welcome it at do civilly uncivil. Sing tall much you get nor.',
+    heroTitle: 'information is not knowledge',
   },
   faq: {
     title: 'FAQ',
     content: 'Call park out she wife face mean. Invitation excellence imprudence understood it continuing to. Ye show done an into. Fifteen winding related may hearted colonel are way studied. County suffer twenty or marked no moment in he. Meet shew or said like he. Valley silent cannot things so remain oh to elinor. Far merits season better tended any age hunted.',
+    faqTitle: 'i need a hero',
   },
   header: {
     icon: '<span class="fab fa-adn"></span>',
@@ -91,6 +93,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Anime',
+    description: 'Interesting things I want to check out!',
+    image: 'https://cdn.pixabay.com/photo/2015/01/11/07/07/moe-595960_1280.png',
+  },
+  {
+    id: 'list-3',
+    title: 'Cartoons',
+    description: 'Interesting things I want to check out!',
+    image: 'https://cdn.pixabay.com/photo/2013/07/12/15/36/cabriolet-150165_1280.png',
+  },
 ];
 
 const columns = [
@@ -113,10 +127,22 @@ const columns = [
     icon: 'gamepad',
   },
   {
-    id: 'column-4',
+    id: 'column-1',
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
+  },
+  {
+    id: 'column-1',
+    listId: 'list-2',
+    title: 'Movies',
+    icon: 'film',
+  },
+  {
+    id: 'column-1',
+    listId: 'list-2',
+    title: 'Games',
+    icon: 'gamepad',
   },
 ];
 

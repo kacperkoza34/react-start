@@ -8,7 +8,7 @@ import {listData} from '../../data/dataStore';
 
 const Faq = () => (
   <Container>
-    <Hero image={listData.image}/>
+    <Hero image={listData.image} titleText={settings.faq.faqTitle}/>
     <h2>{settings.faq.title}</h2>
     <p>{settings.faq.content}</p>
   </Container>
