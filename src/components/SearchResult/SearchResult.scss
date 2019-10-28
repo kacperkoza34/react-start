@@ -1,0 +1,46 @@
+@import '../../styles/settings.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+}
+
+.component {
+  justify-content: center;
+  flex-shrink: 0;
+  width: calc(33% - 12px);
+  background: $color-light;
+  padding: ($base-size * 1.5);
+  border-radius: $radius;
+  //border: 1px solid $color-hero-title;
+  box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
+  color: $color-dark;
+
+  &:last-child {
+    margin: 0 0 $base-size 0;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: ($base-size * 1.5);
+  margin: 0 0 ($base-size * 1.5) 0;
+}
+
+.icon > * {
+  padding-right: $base-size;
+  color: $color-warning;
+  font-size: ($base-size * 2);
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+
+  .component {
+    width: 80%;
+    margin: 0 0 $base-size 0;
+  }
+
+}

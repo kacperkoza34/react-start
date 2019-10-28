@@ -25,6 +25,10 @@ export const settings = {
   header: {
     icon: '<span class="fab fa-adn"></span>',
   },
+  defaultSearchResult: {
+    title: 'Results',
+    icon: '<span class="fas fa-search"></span>',
+  }
 
 };
 

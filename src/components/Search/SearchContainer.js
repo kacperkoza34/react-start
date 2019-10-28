@@ -8,10 +8,11 @@ import {
 } from '../../redux/searchStringRedux';
 
 
+
 const mapStateToProps = (state) => ({
   searchString: getSearchString(state),
-  countVisible: countVisibleCards(state, state),
-  countAll: countAllCards(state),
+  //countVisible: countVisibleCards(state, state),
+  //countAll: countAllCards(state),
 });
 
 const mapDispatchToProps = (dispatch) => ({

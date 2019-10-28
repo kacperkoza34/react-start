@@ -4,7 +4,7 @@ import styles from './Header.scss';
 import Container from '../Container/Container';
 import {settings} from '../../data/dataStore';
 import ReactHtmlParser from 'react-html-parser';
-import Search from '../Search/Search';
+import Search from '../Search/SearchContainer';
 
 
 
