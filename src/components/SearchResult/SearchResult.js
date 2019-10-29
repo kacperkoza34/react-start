@@ -6,6 +6,7 @@ import Icon from '../Icon/Icon.js';
 import Creator from '../Creator/Creator.js';
 import {settings} from '../../data/dataStore';
 import Container from '../Container/Container';
+import {withRouter} from "react-router";
 
 
 
@@ -26,9 +27,14 @@ class SearchResult extends React.Component {
   }
 
 
+
   render(){
-    //console.log(this.props)
+    this.props.changeSearchString(this.props.match.params.id);
+
+
+    console.log(this.props)
     const { cards, title, icon} = this.props;
+
     return (
       <div className={styles.wrapper}>
         <section className={styles.component}>
@@ -58,4 +64,4 @@ SearchResult.propTypes = {
   title: PropTypes.node.isRequired,
 };
 
-export default SearchResult;
+export default withRouter(SearchResult);

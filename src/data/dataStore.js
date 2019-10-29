@@ -131,19 +131,19 @@ const columns = [
     icon: 'gamepad',
   },
   {
-    id: 'column-1',
+    id: 'column-4',
     listId: 'list-2',
     title: 'Strange column',
     icon: 'question',
   },
   {
-    id: 'column-1',
+    id: 'column-5',
     listId: 'list-2',
     title: 'Movies',
     icon: 'film',
   },
   {
-    id: 'column-1',
+    id: 'column-6',
     listId: 'list-2',
     title: 'Games',
     icon: 'gamepad',
@@ -181,6 +181,37 @@ const cards = [
     columnId: 'column-3',
     title: 'Skyrim',
   },
+  {
+    id: 'card-7',
+    columnId: 'column-4',
+    title: 'It',
+  },
+  {
+    id: 'card-8',
+    columnId: 'column-4',
+    title: 'American beauty',
+  },
+  {
+    id: 'card-9',
+    columnId: 'column-5',
+    title: 'Dead note',
+  },
+  {
+    id: 'card-10',
+    columnId: 'column-5',
+    title: 'Figth club',
+  },
+  {
+    id: 'card-11',
+    columnId: 'column-6',
+    title: 'The Ring',
+  },
+  {
+    id: 'card-12',
+    columnId: 'column-6',
+    title: 'Gothic',
+  },
+
 ];
 
 const initialStoreData = {

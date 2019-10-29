@@ -34,7 +34,7 @@ class Search extends React.Component {
   handleOK(){
     if(typeof this.state.value !== 'undefined') this.props.history.push(`/search/${this.state.value}`);
     else this.props.history.push('/search/');
-    this.props.changeSearchString(this.state.value);
+    //console.log(this.props);
   }
 
   componentDidUpdate(prevProps){
@@ -47,7 +47,9 @@ class Search extends React.Component {
     const {text, countVisible, countAll} = this.props;
     const {value} = this.state;
     const {icon} = settings.search;
-    //console.log(this.props);
+    //console.log(this.props.location.pathname.slice(8));
+    //this.props.changeSearchString(this.props.location.pathname.slice(8));
+
     return (
       <Container>
         <div className={styles.component}>
