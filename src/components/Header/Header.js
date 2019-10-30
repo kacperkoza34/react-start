@@ -13,7 +13,7 @@ const Header = props => (
     <h2 className={styles.title}>
       <Container>
         <div className={styles.wrapper}>
-          <NavLink exact to='/' className={styles.logo}>{ReactHtmlParser(settings.header.icon)}</NavLink>
+          <NavLink exact to='/react-start/' className={styles.logo}>{ReactHtmlParser(settings.header.icon)}</NavLink>
           <Search />
           <NavLink exact to='/react-start/'>Home</NavLink>
           <NavLink exact to='/react-start/info'>Info</NavLink>
