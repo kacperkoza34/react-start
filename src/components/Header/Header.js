@@ -15,9 +15,9 @@ const Header = props => (
         <div className={styles.wrapper}>
           <NavLink exact to='/' className={styles.logo}>{ReactHtmlParser(settings.header.icon)}</NavLink>
           <Search />
-          <NavLink exact to='/'>Home</NavLink>
-          <NavLink exact to='/info'>Info</NavLink>
-          <NavLink exact to='/faq'>FAQ</NavLink>
+          <NavLink exact to='/react-start/'>Home</NavLink>
+          <NavLink exact to='/react-start/info'>Info</NavLink>
+          <NavLink exact to='/react-start/faq'>FAQ</NavLink>
         </div>
       </Container>
     </h2>

@@ -32,8 +32,8 @@ class Search extends React.Component {
   }
 
   handleOK(){
-    if(typeof this.state.value !== 'undefined') this.props.history.push(`/search/${this.state.value}`);
-    else this.props.history.push('/search/');
+    if(typeof this.state.value !== 'undefined') this.props.history.push(`/react-start/search/${this.state.value}`);
+    else this.props.history.push('/react-start/search/');
     //console.log(this.props);
   }
 
