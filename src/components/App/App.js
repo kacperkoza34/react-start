@@ -7,13 +7,13 @@ import List from '../List/ListContainer';
 import SearchResult from '../SearchResult/SearchResultContainer';
 
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-//import {AnimatedSwitch} from 'react-router-transition';
+import {AnimatedSwitch} from 'react-router-transition';
 import styles from './App.scss';
 
 const App = () => (
   <BrowserRouter>
     <MainLayout>
-      <Switch
+      <AnimatedSwitch
         atEnter={{ opacity: 0 }}
         atLeave={{ opacity: 0 }}
         atActive={{ opacity: 1 }}
@@ -27,7 +27,7 @@ const App = () => (
         <Route exact path='/react-start/search/' component={Home} />
 
 
-      </Switch>
+      </AnimatedSwitch>
     </MainLayout>
   </BrowserRouter>
 );
