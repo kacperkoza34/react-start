@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "lint": "eslint src/",
-    "server": "http-server ./docs",
+    "server": "http-server docs",
     "build": "webpack --mode production"
   },
   "keywords": [],
