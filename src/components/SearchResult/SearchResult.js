@@ -29,11 +29,8 @@ class SearchResult extends React.Component {
 
 
   render(){
-    this.props.changeSearchString(this.props.match.params.id);
-
-
-    console.log(this.props)
-    const { cards, title, icon} = this.props;
+    const { cards, title, icon, changeSearchString} = this.props;
+    changeSearchString(this.props.match.params.id);
 
     return (
       <div className={styles.wrapper}>
